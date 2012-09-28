@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="The Holstee Blog">
+        <meta name="offsite" content="http://mowgli-tumblr.github.com/"/>
+        <meta name="viewport" content="width=device-width">        
+        <link rel="stylesheet" href="{offsite}submodules/twitter-bootstrap-font-awesome/compiled/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{offsite}css/style.css">
+        <script src="{offsite}js/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+
+        <body>
+          <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+              <div class="container">
+
+                <h1 id="logo"><a href="/" title="Holstee"><img src="{offsite}img/logo.png" alt="Holstee"></a></h1>
+
+                <nav id="links">
+                  <a href="/collections/all">Shop</a>
+                  <a href="/about">About</a>
+                  <a href="http://mylife.holstee.com/">MyLife</a>
+                  <a href="/blog">Blog</a>
+                </nav>
+
+                <nav id="icons" class="pull-right">
+
+                  <a class="btn btn-navbar mowgli globe icon hide" href="#shipping" title="">
+                    <i class="icon-globe"></i>
+                  </a>
+
+                  <a class="btn btn-navbar mowgli phone icon" href="http://help.holstee.com" title="Help is one click away!">
+                    <i class="icon-phone"></i>
+                  </a>
+
+                  <a class="btn btn-navbar mowgli cart icon" href="/cart" title="Your Cart ">
+                    <i class="icon-shopping-cart"></i>
+                    <div id="cart-badge" class="hide">
+                      <span class="badge badge-important" id="item_count">0</span>
+                    </div>
+                  </a>
+
+                </nav>
+
+                <div style="display:none">
+                  <div class="phone-content">
+                    <p class="tel">Give us a call at <a href="tel:15055004656">1 (505) 500-4656</a>.</p>
+                    <p class="mailto">Shoot us an email at <a href="mailto:help@holstee.com">help@holstee.com</a>.</p>
+                    <p class="buttons">
+                      <a href="http://help.holstee.com" class="btn btn-primary">Visit FAQ</a>
+                      <a href="http://help.holstee.com/customer/portal/emails/new" class="btn">Message Us</a>
+                    </p>
+                  </div>
+                  <div class="cart-content">
+                    <table class="table table-condensed">
+                      <thead>
+                        <tr>
+                          <th>Quantity</th>
+                          <th>Item</th>
+                          <th>Price</th>
+                        </tr>
+                      </thead>
+                      <tbody class="products">
+
+                      </tbody>
+                      <tbody>
+                        <tr class="last">
+                          <td colspan="2">
+                            <a href="/checkout" class="btn btn-primary"><i class="icon-shopping-cart icon-white"></i> Checkout</a>
+                            <a href="/cart" class="btn">Edit Cart</a>
+                          </td>
+                          <td class="subtotal">$0.00</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+ 
+              </div>
+            </div>
+          </div>
+
+        <div id="page" class="template ">
+          <div class="capsule gray">
+            <div class="container" id="posts">
+              <div class="row">
+                <div class="span9" id="fill">
+                
+                {block:Posts}
+                
+                  <div class="simple white bottom-space post">
+                    <div class="row-fluid">
+                      <div class="span3">
+                        <p class="match-button">
+                          <span class="date"><i class="icon-time"></i> {TimeAgo}</span><br>
+                          <span class="author">by {PostAuthorTitle}</span>
+                        </p>
+                        <div class="btn-group pull-left interactions">
+                          <a class="btn" title="share" href="{Permalink}"><i class="icon-external-link"></i></a>
+                          <a class="btn" title="like" href="{Permalink}"><i class="icon-heart"></i> {NoteCount}</a>
+                          <a class="btn" title="comment" href="{Permalink}#comment"><i class="icon-comment"></i></a>
+                        </div>
+                        
+                        {block:HasTags}
+                        <div class="tags">
+                          {block:Tags}
+                          <a href="{TagURL}">{Tag}</a>
+                          {/block:Tags}
+                        </div>
+                        {/block:HasTags}
+                        
+                      </div>
+                      <div class="span9">
+                        {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+                        
+                        <div class="content">
+                          
+                          <!-- ////////////////////////////// -->
+                          
+                          {block:Answer}
+
+                            <div class="QUOTEINFO">
+
+                              <div class="QUOTEMARK"></div>
+                              <div class="TEXT">
+                                {Question}
+                              </div>
+
+                            </div>
+
+                            <p>{lang:Asked by Asker}</p>
+
+                            <div class="BREAK"></div>
+
+                            <div class="RESPONSE">
+
+                              {Answer}
+
+                            </div>
+
+                          {/block:Answer}
+
+                          <!-- ////////////////////////////// -->
+
+                          {block:Text}
+
+                            {Body}
+
+                          {/block:Text}
+
+                          <!-- ////////////////////////////// -->
+
+                          {block:Video}
+
+                            {Video-500}
+
+                            {block:Caption}
+                              {Caption}
+                            {/block:Caption}
+
+                          {/block:Video}
+
+                          <!-- ////////////////////////////// -->
+
+                          {block:Photo}
+
+                            <div class="CENTER">
+
+                              {LinkOpenTag}<img alt="{PhotoAlt}" src="{PhotoURL-500}" />{LinkCloseTag}
+
+                            </div>
+
+                            {block:Caption}
+                              <div class="CAPTION">
+                                {Caption}
+                              </div>
+                            {/block:Caption}
+
+                          {/block:Photo}
+
+                          <!-- ////////////////////////////// -->
+                          
+                          {block:Quote}
+                          <blockquote>
+                            <p>{Quote}</p>
+                          </blockquote>
+                            {block:Source}
+                              <div class="pull-right">
+                              - {Source}
+                              </div>
+                            {/block:Source}
+                          {/block:Quote}
+                          
+                          <!-- ////////////////////////////// -->
+
+                          {block:Link}
+                            
+                            <h2><a href="{URL}" target="{Target}">{Name}</a></h2>
+                            
+                            {block:Description}
+                              <p>{Description}</p>
+                            {/block:Description}
+
+                          {/block:Link}
+
+                          <!-- ////////////////////////////// -->
+                          
+                          {block:Chat}
+
+                            <ul class="CHAT">
+
+                              {block:Lines}
+                              <li class="{Alt} {UserNumber}">{block:Label}<strong>{Label}</strong> {/block:Label}{Line}</li>
+                              {/block:Lines}
+
+                            </ul>
+
+                          {/block:Chat}
+
+                          <!-- ////////////////////////////// -->
+
+                          {block:Audio}
+
+                            <div class="PLAYER">
+
+                              <div class="ALBUMART">
+
+                                {block:AlbumArt}<img  alt="" src="{AlbumArtURL}" />{/block:AlbumArt}
+
+                              </div>
+
+                              <div class="OVERLAY">
+
+                                <div class="OBJ">
+                                  {AudioPlayerGrey}
+                                </div>
+
+                                <div class="COUNT">
+                                  This track has had {PlayCountWithLabel}
+                                </div>
+
+                                <div class="TRACK">
+                                  {block:TrackName}
+                                    <strong>{TrackName}</strong>
+                                  {/block:TrackName}
+
+                                  {block:TrackName}
+                                    {block:Artist}
+                                      by
+                                    {/block:Artist}
+                                  {/block:TrackName}
+
+                                  {block:Artist}
+                                  <a href="http://last.fm/{Artist}">{Artist}</a>
+                                  {/block:Artist}
+                                </div>
+
+                              </div>
+
+                            </div>
+
+                            {block:Caption}
+                              {Caption}
+                            {/block:Caption}
+
+                          {/block:Audio}
+
+                          <!-- ////////////////////////////// -->
+
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  {block:PermalinkPage}
+                  <div class="simple white bottom-space post" id="comment">
+                    <div class="row-fluid">
+                      <div class="span3">
+                        <div class="fb-comments" data-href="{permalink}" data-num-posts="5" data-width="660"></div>
+                        <div id="fb-root"></div>
+                      </div>
+                    </div>
+                  </div>
+                  {/block:PermalinkPage}
+                
+                {/block:Posts}
+                
+                {block:Pagination}
+                <ul class="pager">
+                {block:PreviousPage}
+                <li><a href="{PreviousPage}" id="previous-page">{lang:Previous page}</a></li>
+                {/block:PreviousPage}
+                {block:NextPage}
+                <li><a href="{NextPage}" id="next-page">{lang:Next page}</a></li>
+                {/block:NextPage}
+                </ul>
+                {/block:Pagination}
+                
+                </div>
+
+<div class="span3">
+    <div class="row-fluid space">
+        <div class="span12">
+            <div class="simple white">
+                <h5 class="lte">Happenings at Holstee</h5>
+                <ul class="navlinks">
+                    <li><a>What we're learn</a></li>
+                    <li><a>Product launches</a></li>
+                    <li><a>The Design Lab</a></li>
+                    <li><a>What's cooking</a></li>
+                    <li><a>Inside Holstee HQ</a></li>
+                    <li><a>Community Love</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid space">
+        <div class="span12">
+            <div class="simple white">
+                <div class="row-fluid space">
+                    <div class="span12">
+                        <h5 class="lte"><a href="http://feeds.feedburner.com/holstee">Subscribe for updates <i class="icon-rss"></i></a></h5>
+                        <p class="lte">Sign up to receive new posts from this blog by email.</p>
+                        <div id="mailchimp-success" class="hide"><img src="{offsite}img/ajax-loader.gif"></div>
+                        <form action="http://files.holstee.com/tumblr/holstee/mailchimp/mailchimp.php" method="get" id="newsletter">
+                          <div class="input-prepend">
+                              <span class="add-on"><i class="icon-envelope-alt"></i></span><input class="span10" id="prependedInput" size="16" type="text" placeholder="Enter Your Email" name="EMAIL" style="width:152px">
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="capsule" id="copyright">
+            <div class="container">
+              <div class="row">
+                <div class="span6">
+                  <span>Copyright &copy; Holstee Inc. 2011. <a href="http://shop.holstee.com/pages/legal" target="_blank">Legal Information</a></span>
+                </div>
+                <div class="span6 right-align">
+                  <span>Built in <a href="http://nytm.org/made-in-nyc" target="_blank">NYC</a> on <a href="http://holstee.com/shopify" target="_blank">Shopify</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+          <script src="{offsite}js/jquery.infinitescroll.min.js"></script>
+          <script src="{offsite}js/script.js"></script>
+          
+          <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1122853-4']);
+            _gaq.push(['_setDomainName', 'holstee.com']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+          </script>
+          
+    </body>
+</html>

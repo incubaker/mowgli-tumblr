@@ -1,0 +1,3 @@
+[submodule "submodules/twitter-bootstrap-font-awesome"]
+	path = submodules/twitter-bootstrap-font-awesome
+	url = git://github.com/incubaker/twitter-bootstrap-font-awesome.git
