@@ -273,5 +273,5 @@ p img{margin:0px !important}
 #mailchimp-success{padding-bottom: 10px;}
 #mailchimp-success.success{color: green;}
 #mailchimp-success.fail{color: red;}
-
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {border-width: 0px;}
+.span9 h2 {font-size:24px;}
