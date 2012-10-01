@@ -7,13 +7,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
-        <meta name="description" content="The Holstee Blog">
-        <meta name="text: offsite" content="http://incubaker.github.com/mowgli-tumblr/"/>
-        <meta name="viewport" content="width=device-width">        
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
-        <link rel="stylesheet" href="submodules/twitter-bootstrap-font-awesome/compiled/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/modernizr-2.6.1.min.js"></script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="http://files.holstee.com/tumblr/holstee/src/bootstrap-compiled/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://files.holstee.com/tumblr/holstee/src/Font-Awesome-compliled/css/font-awesome.css">
+        <link rel="stylesheet" href="http://files.holstee.com/shopify/themes/mowgli/css/style.css">
+        <link rel="stylesheet" href="http://files.holstee.com/tumblr/holstee/style.css">
+        <script src="http://files.holstee.com/tumblr/holstee/src/html5-boilerplate/js/vendor/modernizr-2.6.1.min.js"></script>
     </head>
     <body>
 
@@ -22,7 +22,7 @@
             <div class="navbar-inner">
               <div class="container">
 
-                <h1 id="logo"><a href="/" title="Holstee"><img src="img/logo.png" alt="Holstee"></a></h1>
+                <h1 id="logo"><a href="/" title="Holstee"><img src="http://files.holstee.com/shopify/themes/mowgli/img/logo.png" alt="Holstee"></a></h1>
 
                 <nav id="links">
                   <a href="/collections/all">Shop</a>
@@ -38,10 +38,12 @@
                   </a>
 
                   <a class="btn btn-navbar mowgli phone icon" href="http://help.holstee.com" title="Help is one click away!">
+                    <!--<img src="http://files.holstee.com/shopify/themes/mowgli/img/icons.png" alt="Telephone">-->
                     <i class="icon-phone"></i>
                   </a>
 
                   <a class="btn btn-navbar mowgli cart icon" href="/cart" title="Your Cart ">
+                    <!--<img src="http://files.holstee.com/shopify/themes/mowgli/img/icons.png" alt="Cart">-->
                     <i class="icon-shopping-cart"></i>
                     <div id="cart-badge" class="hide">
                       <span class="badge badge-important" id="item_count">0</span>
@@ -84,7 +86,11 @@
 
                   </div>
                 </div>
- 
+                <!--
+                <a class="stack" href="http://holstee.com" title="Stack"><img src="http://files.holstee.com/shopify/themes/mowgli/img/icons.png" alt="Stack"></a>
+                <a class="phone" href="http://holstee.com" title="Call Us"><img src="http://files.holstee.com/shopify/themes/mowgli/img/icons.png" alt="Telephone"></a>
+                <a class="cart" href="http://holstee.com" title="Cart Page"><img src="http://files.holstee.com/shopify/themes/mowgli/img/icons.png" alt="Cart"></a>
+                -->
               </div>
             </div>
           </div>
@@ -312,7 +318,7 @@
     <div class="row-fluid space">
         <div class="span12">
             <div class="simple white">
-                <h5 class="lte">Happenings at Holstee</h5>
+                <h4 class="lte">Happenings at Holstee</h4>
                 <ul class="navlinks">
                     <li><a>What we're learn</a></li>
                     <li><a>Product launches</a></li>
@@ -329,9 +335,9 @@
             <div class="simple white">
                 <div class="row-fluid space">
                     <div class="span12">
-                        <h5 class="lte"><a href="http://feeds.feedburner.com/holstee">Subscribe for updates <i class="icon-rss"></i></a></h5>
+                        <h4 class="lte"><a href="http://feeds.feedburner.com/holstee">Subscribe for updates <i class="icon-rss"></i></a></h4>
                         <p class="lte">Sign up to receive new posts from this blog by email.</p>
-                        <div id="mailchimp-success" class="hide"><img src="img/ajax-loader.gif"></div>
+                        <div id="mailchimp-success" class="hide"><img src="http://files.holstee.com/tumblr/holstee/src/ajax-loader.gif"></div>
                         <form action="http://files.holstee.com/tumblr/holstee/mailchimp/mailchimp.php" method="get" id="newsletter">
                           <div class="input-prepend">
                               <span class="add-on"><i class="icon-envelope-alt"></i></span><input class="span10" id="prependedInput" size="16" type="text" placeholder="Enter Your Email" name="EMAIL" style="width:152px">
@@ -364,23 +370,23 @@
             </div>
           </div>
           <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-          <script src="js/jquery.infinitescroll.min.js"></script>
-          <script src="js/script.js"></script>
+          <script src="http://files.holstee.com/tumblr/holstee/src/infinite-scroll/jquery.infinitescroll.min.js"></script>
+          <script src="http://files.holstee.com/tumblr/holstee/script.js"></script>
           
           <script type="text/javascript">
 
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-1122853-4']);
-            _gaq.push(['_setDomainName', 'holstee.com']);
-            _gaq.push(['_trackPageview']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1122853-4']);
+  _gaq.push(['_setDomainName', 'holstee.com']);
+  _gaq.push(['_trackPageview']);
 
-            (function() {
-              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-          </script>
+</script>
           
     </body>
 </html>
