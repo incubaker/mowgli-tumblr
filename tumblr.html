@@ -10,10 +10,12 @@
         <meta name="description" content="The Holstee Blog">
         <meta name="text: offsite" content="http://incubaker.github.com/mowgli-tumblr/"/>
         <meta name="viewport" content="width=device-width">        
-        <link rel="icon" href="{text: offsite}img/favicon.ico" type="image/x-icon"> 
+       <!-- start offsite links -->
         <link rel="stylesheet" href="{text: offsite}submodules/twitter-bootstrap-font-awesome/compiled/css/bootstrap.min.css">
+        <link rel="icon" href="{text: offsite}img/favicon.ico" type="image/x-icon"> 
         <link rel="stylesheet" href="{text: offsite}css/style.css">
         <script src="{text: offsite}js/modernizr-2.6.1.min.js"></script>
+        <!-- end offsite links -->
     </head>
     <body>
 
@@ -28,7 +30,7 @@
                   <a href="/collections/all">Shop</a>
                   <a href="/about">About</a>
                   <a href="http://mylife.holstee.com/">MyLife</a>
-                  <a href="/blog">Blog</a>
+                  <a href="/">Blog</a>
                 </nav>
 
                 <nav id="icons" class="pull-right">
@@ -101,22 +103,12 @@
                     <div class="row-fluid">
                       <div class="span3">
                         <p class="match-button">
-                          <span class="date"><i class="icon-time"></i> {TimeAgo}</span><br>
-                          <span class="author">by {PostAuthorTitle}</span>
+                          <span class="date"><a href="{Permalink}"><i class="icon-time"></i> {TimeAgo}</span></a><br>
+                          <span class="author">by <a href="{PostAuthorURL}">{PostAuthorName}</span></a>
                         </p>
-                        <div class="btn-group pull-left interactions">
-                          <a class="btn" title="share" href="{Permalink}"><i class="icon-external-link"></i></a>
-                          <a class="btn" title="like" href="{Permalink}"><i class="icon-heart"></i> {NoteCount}</a>
-                          <a class="btn" title="comment" href="{Permalink}#comment"><i class="icon-comment"></i></a>
-                        </div>
                         
-                        {block:HasTags}
-                        <div class="tags">
-                          {block:Tags}
-                          <a href="{TagURL}">{Tag}</a>
-                          {/block:Tags}
-                        </div>
-                        {/block:HasTags}
+                        
+                        
                         
                       </div>
                       <div class="span9">
@@ -275,6 +267,15 @@
                           {/block:Audio}
 
                           <!-- ////////////////////////////// -->
+                          
+                        <br /><br />
+                        {block:HasTags}
+                        <div class="tags">
+                          {block:Tags}
+                          Tags: <a href="{TagURL}">#{Tag}</a>
+                          {/block:Tags}
+                        </div>
+                        {/block:HasTags}
 
                         </div>
                         
@@ -314,12 +315,12 @@
             <div class="simple white">
                 <h5 class="lte">Happenings at Holstee</h5>
                 <ul class="navlinks">
-                    <li><a>What we're learn</a></li>
-                    <li><a>Product launches</a></li>
-                    <li><a>The Design Lab</a></li>
-                    <li><a>What's cooking</a></li>
-                    <li><a>Inside Holstee HQ</a></li>
-                    <li><a>Community Love</a></li>
+                    <li><a href="/tagged/learn">What we're learn</a></li>
+                    <li><a href="/tagged/launch">Product launches</a></li>
+                    <li><a href="/tagged/design">The Design Lab</a></li>
+                    <li><a href="/tagged/food">What's cooking</a></li>
+                    <li><a href="/tagged/inside">Inside Holstee HQ</a></li>
+                    <li><a href="/tagged/community">Community Love</a></li>
                 </ul>
             </div>
         </div>
@@ -364,7 +365,7 @@
             </div>
           </div>
           <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-          <script src="{text: offsite}js/jquery.infinitescroll.min.js"></script>
+           <script src="{text: offsite}js/jquery.infinitescroll.min.js"></script>
           <script src="{text: offsite}js/script.js"></script>
           
           <script type="text/javascript">

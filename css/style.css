@@ -275,3 +275,9 @@ p img{margin:0px !important}
 #mailchimp-success.fail{color: red;}
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {border-width: 0px;}
 .span9 h2 {font-size:24px;}
+.date a {color: #ccc;}
+.date a:hover {color: #08c; text-decoration: none;}
+.author a {color: #ccc;}
+.author a:hover {color: #08c; text-decoration: none;}
+.tags a {color: #ccc;}
+.tags a:hover {color: #08c; text-decoration: none;}
