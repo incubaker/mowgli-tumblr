@@ -6,8 +6,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="The Holstee Blog">
+        <title>The Holstee Blog | Holstee</title>
+        <meta name="description" content="A look inside the Holstee office, our team, what we up to!">
         <meta name="text: offsite" content="http://incubaker.github.com/mowgli-tumblr/"/>
         <meta name="viewport" content="width=device-width">        
        <!-- start offsite links -->
@@ -27,8 +27,8 @@
                 <h1 id="logo"><a href="/" title="Holstee"><img src="{text: offsite}img/logo.png" alt="Holstee"></a></h1>
 
                 <nav id="links">
-                  <a href="/collections/all">Shop</a>
-                  <a href="/about">About</a>
+                  <a href="http://shop.holstee.com/collections/all">Shop</a>
+                  <a href="http://shop.holstee.com/about">About</a>
                   <a href="http://mylife.holstee.com/">MyLife</a>
                   <a href="/">Blog</a>
                 </nav>
@@ -104,11 +104,20 @@
                       <div class="span3">
                         <p class="match-button">
                           <span class="date"><a href="{Permalink}"><i class="icon-time"></i> {TimeAgo}</span></a><br>
-                          <span class="author">by <a href="{PostAuthorURL}">{PostAuthorName}</span></a>
+                          <span class="author">by <a href="{PostAuthorURL}">{PostAuthorTitle}</span></a>
                         </p>
                         
                         
-                        
+                           <!-- AddThis Button BEGIN -->
+                          <div class="socialbuttons"
+                            <div class="addthis_toolbox addthis_counter_style" addthis:title="{Title}" addthis:url="{Permalink}"  style="width:50px;">
+                              <a class="addthis_button_facebook_like" fb:like:layout="box_count"></a>
+                              <a class="addthis_button_tweet" tw:count="vertical"></a>
+                              <a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
+                            </div>
+                            <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=holstee"></script>
+                          </div>
+                          <!-- AddThis Button END -->
                         
                       </div>
                       <div class="span9">
@@ -267,16 +276,14 @@
                           {/block:Audio}
 
                           <!-- ////////////////////////////// -->
-                          
-                        <br /><br />
-                        {block:HasTags}
-                        <div class="tags">
-                          {block:Tags}
-                          Tags: <a href="{TagURL}">#{Tag}</a>
-                          {/block:Tags}
-                        </div>
-                        {/block:HasTags}
 
+                          {block:HasTags}
+                            <div class="tags">
+                               <br /><br />
+                              Tags: {block:Tags}<a href="{TagURL}">#{Tag}</a> {/block:Tags}
+                              <br /><br />
+                            </div>
+                          {/block:HasTags}
                         </div>
                         
                       </div>
