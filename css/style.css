@@ -282,4 +282,4 @@ p img{margin:0px !important}
 .tags a {color: #ccc;}
 .tags a:hover {color: #08c; text-decoration: none;}
 .socialbuttons {display:none;}
-.socialbuttons active{display:inline;}
+.socialbuttons:active {display:inline;}
