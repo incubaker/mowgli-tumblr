@@ -281,5 +281,5 @@ p img{margin:0px !important}
 .author a:hover {color: #08c; text-decoration: none;}
 .tags a {color: #ccc;}
 .tags a:hover {color: #08c; text-decoration: none;}
-.socialbuttons {z-index:1;}
-.socialbuttons .post:hover {z-index: 999;}
+.socialbuttons {display:none;}
+.socialbuttons .post:hover {display:inline;}
