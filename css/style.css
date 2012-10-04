@@ -281,5 +281,4 @@ p img{margin:0px !important}
 .author a:hover {color: #08c; text-decoration: none;}
 .tags a {color: #ccc;}
 .tags a:hover {color: #08c; text-decoration: none;}
-.socialbuttons {display:none;}
-.socialbuttons:hover {display:inline;}
+.socialbuttons .simple iframe {margin:0 0 10px 0;}
