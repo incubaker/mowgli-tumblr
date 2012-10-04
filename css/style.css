@@ -275,10 +275,10 @@ p img{margin:0px !important}
 #mailchimp-success.fail{color: red;}
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {border-width: 0px;}
 .span9 h2 {font-size:24px;}
-.date a {color: #ccc;}
+.date a {color: #ccc; font-size:11px;}
 .date a:hover {color: #08c; text-decoration: none;}
 .author a {color: #ccc;}
 .author a:hover {color: #08c; text-decoration: none;}
 .tags a {color: #ccc;}
 .tags a:hover {color: #08c; text-decoration: none;}
-.socialbuttons .simple iframe {margin:0 0 10px 0;}
+.socialbuttons {margin-top:5px;}
