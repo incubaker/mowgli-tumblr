@@ -355,4 +355,4 @@ p img{margin:0px !important}
 .tags {width: 500px;}
 .tags a {color: #ccc;}
 .tags a:hover {color: #FFFFFF; text-decoration: none;}
-.notes .simple img {margin: 0 0 0 0 !important;}
+ol.notes li.note img.avatar {margin: 0 !important;}
