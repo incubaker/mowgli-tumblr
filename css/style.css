@@ -258,7 +258,7 @@ nav#icons a.icon{overflow:visible !important;}
 /** Tumblr specifc **/
 
 .template .row-fluid.space{margin-bottom:20px;}
-p.match-button{line-height: 22px;padding: 0;margin: 0 0 5px 0;}
+p.match-button{line-height: 22px;padding: 0;margin: 0 0 5px 0; text-align: center;}
 .lte{margin:0 0 10px 0 !important}
 .navlinks{list-style:none;margin:0;padding:0;}
 .navlinks li{padding:0 0 3px 0;}
@@ -275,7 +275,7 @@ p img{margin:0px !important}
 #mailchimp-success.fail{color: red;}
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {border-width: 0px;}
 .span9 h2 {font-size:24px;}
-.date a {color: #ccc; font-size:12px;}
+.date a {color: #ccc; font-size:13px;}
 .date a:hover {color: #08c; text-decoration: none;}
 .author a {color: #ccc;}
 .author a:hover {color: #08c; text-decoration: none;}
@@ -314,4 +314,6 @@ p img{margin:0px !important}
     _filter: chroma(color=pink);
 }
 .border-callout .border-notch { border-right-color: #555;border-left-color: #555;top: 28px;}
-.widthlimit1 {width:115px;}
+.widthlimit1 {width:130px !important;}
+.widthlimit2 {width:543px !important;}
+.simple .white {margin-bottom: 20px;}
