@@ -333,6 +333,14 @@ p img{margin:0px !important}
                 width: 16px;
                 height: 16px;
             }
+            ol.notes li.note img.avatar {
+				vertical-align: -23px;
+				margin-right: 10px;
+				width: 50px;
+				height: 50px;
+				border-radius: 100px;
+				margin: 0 5px 0 0px !important;
+			}
 
             ol.notes li.note span.action {
                 font-weight: bold;
@@ -352,7 +360,6 @@ p img{margin:0px !important}
                 text-decoration: none;
             }
 .label {margin-right: 5px; white-space: normal !important;}
-.tags {width: 500px;}
+.tags {width: 500px; margin-bottom: 10px;}
 .tags a {color: #ccc;}
 .tags a:hover {color: #FFFFFF; text-decoration: none;}
-ol.notes li.note img.avatar {margin: 0 !important;}
