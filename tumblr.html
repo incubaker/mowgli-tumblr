@@ -274,7 +274,7 @@
                           {/block:Audio}
 
                           <!-- ////////////////////////////// -->
-
+                            {block:PermalinkPage}
                           {block:HasTags}
                             <div class="tags">
                                <br />
@@ -283,26 +283,18 @@
                             </div>
                           {/block:HasTags}
                             <div class="notes">
-                              {block:PostNotes} {PostNotes-16} {/block:PostNotes}
+                              {block:PostNotes} {PostNotes-64} {/block:PostNotes}
                             </div>
-                            {block:PermalinkPage}
-                            
-                                <div class="span3">
-                                  <div class="fb-comments" data-href="{permalink}" data-num-posts="5" data-width="480"></div>
+                                  <div class="fb-comments" data-href="{permalink}" data-num-posts="5" data-width="500"></div>
                                   <div id="fb-root"></div>
-                                </div>
-                     
+
                             {/block:PermalinkPage}
                         </div>
                         
                       </div>
                     </div>
                   </div>
-                
-                  
-                
                 {/block:Posts}
-                
                 {block:Pagination}
                 <ul class="pager">
                 {block:PreviousPage}

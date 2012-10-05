@@ -351,7 +351,8 @@ p img{margin:0px !important}
             ol.notes li.note blockquote a {
                 text-decoration: none;
             }
-.tags .label {margin-right: 5px}
+.label .badge {margin-right: 5px, white-space: normal !important;}
 .tags {width: 500px;}
 .tags a {color: #ccc;}
 .tags a:hover {color: #FFFFFF; text-decoration: none;}
+.notes .simple img
