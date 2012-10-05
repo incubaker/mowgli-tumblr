@@ -279,8 +279,6 @@ p img{margin:0px !important}
 .date a:hover {color: #08c; text-decoration: none;}
 .author a {color: #ccc;}
 .author a:hover {color: #08c; text-decoration: none;}
-.tags a {color: #ccc;}
-.tags a:hover {color: #08c; text-decoration: none;}
 .socialbuttons {display:none;}
 .row-fluid:hover .socialbuttons  {display:block;}
 .callout {
@@ -316,3 +314,44 @@ p img{margin:0px !important}
 .widthlimit1 {width:130px !important;}
 .widthlimit2 {width:543px !important;}
 .simple .white {margin-bottom: 20px;}
+
+   ol.notes {
+                padding: 0px;
+                margin: 25px 0px;
+                list-style-type: none;
+                border-bottom: solid 1px #ccc;
+            }
+
+            ol.notes li.note {
+                border-top: solid 1px #ccc;
+                padding: 10px;
+            }
+
+            ol.notes li.note img.avatar {
+                vertical-align: -4px;
+                margin-right: 10px;
+                width: 16px;
+                height: 16px;
+            }
+
+            ol.notes li.note span.action {
+                font-weight: bold;
+            }
+
+            ol.notes li.note .answer_content {
+                font-weight: normal;
+            }
+
+            ol.notes li.note blockquote {
+                border-color: #eee;
+                padding: 4px 10px;
+                margin: 10px 0px 0px 25px;
+            }
+
+            ol.notes li.note blockquote a {
+                text-decoration: none;
+            }
+.tags .label {margin-right: 5px}
+.tags {width: 500px;}
+.tags a {color: #ccc;}
+.tags a:hover {color: #FFFFFF; text-decoration: none;}

@@ -103,7 +103,7 @@
                         <p class="match-button">
                          
                         <span class="authorimage"><a href="{PostAuthorURL}" title="{PostAuthorTitle}" target="_blank"><img src="{PostAuthorPortraitURL-96}" style="border-radius:100px"/></a></span><br><br>
-                        <span class="date"><a href="{Permalink}">Posted {TimeAgo}</span></a>
+                        <span class="date"><a href="{Permalink}">{TimeAgo}</span></a><br>
                         <span class="date"><a href="{Permalink}">{NoteCountWithLabel}</span></a>
                         </p>
                             <span class="socialbuttons">
@@ -277,27 +277,29 @@
 
                           {block:HasTags}
                             <div class="tags">
-                               <br /><br />
-                              Tags: {block:Tags}<a href="{TagURL}">#{Tag}</a> {/block:Tags}
-                              <br /><br />
+                               <br />
+                              {block:Tags}<span class="label"><a href="{TagURL}">#{Tag}</a></span>{/block:Tags}
+                              <br />
                             </div>
                           {/block:HasTags}
+                            <div class="notes">
+                              {block:PostNotes} {PostNotes-16} {/block:PostNotes}
+                            </div>
+                            {block:PermalinkPage}
+                            
+                                <div class="span3">
+                                  <div class="fb-comments" data-href="{permalink}" data-num-posts="5" data-width="480"></div>
+                                  <div id="fb-root"></div>
+                                </div>
+                     
+                            {/block:PermalinkPage}
                         </div>
                         
                       </div>
                     </div>
                   </div>
                 
-                  {block:PermalinkPage}
-                  <div class="simple white bottom-space post" id="comment">
-                    <div class="row-fluid">
-                      <div class="span3">
-                        <div class="fb-comments" data-href="{permalink}" data-num-posts="5" data-width="660"></div>
-                        <div id="fb-root"></div>
-                      </div>
-                    </div>
-                  </div>
-                  {/block:PermalinkPage}
+                  
                 
                 {/block:Posts}
                 
