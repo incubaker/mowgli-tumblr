@@ -285,7 +285,7 @@ p img{margin:0px !important}
 .row-fluid:hover .socialbuttons  {display:block;}
 .callout {
     position: relative;
-    margin: 18px 0;
+    margin: 0px 0;
     padding: 18px 20px;
     background-color: #eef4f9;
     /* easy rounded corners for modern browsers */
@@ -314,5 +314,4 @@ p img{margin:0px !important}
     _filter: chroma(color=pink);
 }
 .border-callout .border-notch { border-right-color: #555;border-left-color: #555;top: 28px;}
-.widthlimit2 {min-width:543px;}
-.widthlimit1 {width:20%;}
+.widthlimit1 {width:115px;}
