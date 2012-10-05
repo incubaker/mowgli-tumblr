@@ -274,7 +274,7 @@
                           {/block:Audio}
 
                           <!-- ////////////////////////////// -->
-                            {block:PermalinkPage}
+                            
                           {block:HasTags}
                             <div class="tags">
                                <br />
@@ -282,8 +282,9 @@
                               <br />
                             </div>
                           {/block:HasTags}
+                          {block:PermalinkPage}
                             <div class="notes">
-                              {block:PostNotes} {PostNotes-64} {/block:PostNotes}
+                              {block:PostNotes}{PostNotes-64}{/block:PostNotes}
                             </div>
                                   <div class="fb-comments" data-href="{permalink}" data-num-posts="5" data-width="500"></div>
                                   <div id="fb-root"></div>
