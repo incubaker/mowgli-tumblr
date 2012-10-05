@@ -314,4 +314,5 @@ p img{margin:0px !important}
     _filter: chroma(color=pink);
 }
 .border-callout .border-notch { border-right-color: #555;border-left-color: #555;top: 28px;}
-
+.widthlimit2 {min-width:543px;}
+.widthlimit1 {width:20%;}
