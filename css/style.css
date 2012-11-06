@@ -264,8 +264,8 @@ p.match-button{line-height: 22px;padding: 0;margin: 0 0 5px 0; text-align: cente
 .navlinks li{padding:0 0 3px 0;}
 .interactions{margin-bottom:20px;width:139px;}
 .bottom-space{margin-bottom:20px;}
-.post .span3{width:144px}
-.post .span9{width:500px;}
+.subpost .span3{width:144px}
+.subpost .span9{width:500px;}
 p img{margin:0px !important}
 .simple h2 {margin-bottom:10px;}
 #infscr-loading{display:none !important;visibility:hidden;height:0;width:0;}
