@@ -257,13 +257,13 @@ nav#icons a.icon{overflow:visible !important;}
 
 /** Tumblr specifc **/
 
-.template .row-fluid.space{margin-bottom:20px;}
+.template .row-fluid.space{margin-bottom:30px;}
 p.match-button{line-height: 22px;padding: 0;margin: 0 0 5px 0; text-align: center;}
 .lte{margin:0 0 10px 0 !important}
 .navlinks{list-style:none;margin:0;padding:0;}
 .navlinks li{padding:0 0 3px 0;}
 .interactions{margin-bottom:20px;width:139px;}
-.bottom-space{margin-bottom:20px;}
+.bottom-space{margin-bottom:30px;}
 .post .span3{width:144px}
 .post .span9{width:500px;}
 p img{margin:0px !important}
